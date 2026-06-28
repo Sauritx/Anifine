@@ -11,3 +11,5 @@ button { cursor: pointer; }
 .bg-radial-noise::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(circle at 18% 8%, rgba(229,57,53,.24), transparent 28%), radial-gradient(circle at 86% 0%, rgba(255,193,7,.10), transparent 24%), radial-gradient(circle at 50% 80%, rgba(229,57,53,.12), transparent 30%), linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px); background-size: auto, auto, auto, 46px 46px, 46px 46px; mask-image: linear-gradient(to bottom, black, transparent 88%); }
 .glass { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.11); box-shadow: 0 20px 60px rgba(0,0,0,.35); backdrop-filter: blur(22px); }
 ::selection { background: rgba(229,57,53,.55); color: white; }
+:focus-visible { outline: 2px solid rgba(229,57,53,.85); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
