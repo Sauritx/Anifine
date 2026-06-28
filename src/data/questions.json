@@ -1,0 +1,6 @@
+[
+  {"id":"luffy","difficulty":"Easy","answer":"Monkey D. Luffy","aliases":["luffy","monkey d luffy"],"points":100,"hints":["A pirate captain chasing the ultimate treasure.","His body stretches after eating a Devil Fruit.","He wears a straw hat."]},
+  {"id":"mikasa","difficulty":"Medium","answer":"Mikasa Ackerman","aliases":["mikasa","mikasa ackerman"],"points":150,"hints":["A top soldier protecting someone important.","Uses vertical maneuvering equipment.","She is from Attack on Titan."]},
+  {"id":"gojo","difficulty":"Hard","answer":"Satoru Gojo","aliases":["gojo","satoru gojo"],"points":220,"hints":["A teacher with overwhelming cursed energy.","Known for Limitless and Six Eyes.","Usually covers his eyes."]},
+  {"id":"lain","difficulty":"Impossible","answer":"Lain Iwakura","aliases":["lain","lain iwakura"],"points":320,"hints":["A quiet girl connected to a digital network.","Her story blurs identity and reality.","She is the lead of Serial Experiments Lain."]}
+]
