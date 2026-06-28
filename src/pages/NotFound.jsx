@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom'; import Button from '../components/Button';
+export default function NotFound(){return <div className="grid min-h-[60vh] place-items-center text-center"><div><h1 className="font-display text-7xl font-extrabold">404</h1><p className="mt-3 text-white/55">The requested arena does not exist.</p><Link to="/"><Button className="mt-6">Return Home</Button></Link></div></div>}
