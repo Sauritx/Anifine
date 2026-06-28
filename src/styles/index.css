@@ -4,7 +4,10 @@
 @tailwind utilities;
 
 * { box-sizing: border-box; }
+html { background: #090909; }
 body { margin: 0; min-height: 100vh; background: #090909; color: white; font-family: Inter, sans-serif; }
 button, input { font: inherit; }
-.bg-radial-noise::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(circle at 20% 10%, rgba(229,57,53,.22), transparent 28%), radial-gradient(circle at 80% 0%, rgba(255,193,7,.10), transparent 26%), linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); background-size: auto, auto, 44px 44px, 44px 44px; mask-image: linear-gradient(to bottom, black, transparent 85%); }
-.glass { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.11); box-shadow: 0 20px 60px rgba(0,0,0,.35); backdrop-filter: blur(20px); }
+button { cursor: pointer; }
+.bg-radial-noise::before { content: ""; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(circle at 18% 8%, rgba(229,57,53,.24), transparent 28%), radial-gradient(circle at 86% 0%, rgba(255,193,7,.10), transparent 24%), radial-gradient(circle at 50% 80%, rgba(229,57,53,.12), transparent 30%), linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px); background-size: auto, auto, auto, 46px 46px, 46px 46px; mask-image: linear-gradient(to bottom, black, transparent 88%); }
+.glass { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.11); box-shadow: 0 20px 60px rgba(0,0,0,.35); backdrop-filter: blur(22px); }
+::selection { background: rgba(229,57,53,.55); color: white; }
