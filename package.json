@@ -1,1 +1,25 @@
-{"scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","preview":"vite preview"},"dependencies":{"vite":"latest","react":"latest","react-dom":"latest","react-router-dom":"latest","firebase":"latest","lucide-react":"latest","framer-motion":"latest","tailwindcss":"^3.4.17"},"private":true,"name":"anifine","version":"0.1.0","type":"module"}
+{
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "firebase": "latest",
+    "lucide-react": "latest",
+    "framer-motion": "latest",
+    "tailwindcss": "^3.4.17"
+  },
+  "private": true,
+  "name": "anifine",
+  "version": "0.1.0",
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest"
+  }
+}

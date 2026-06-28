@@ -1,0 +1,6 @@
+import { Link, NavLink } from 'react-router-dom';
+import { Gamepad2, Home, LogOut, Trophy, User } from 'lucide-react';
+import Button from '../components/ui/Button';
+import { useAuth } from '../features/auth/AuthContext';
+const links = [{to:'/',label:'Home',icon:Home},{to:'/play',label:'Play',icon:Gamepad2},{to:'/leaderboard',label:'Leaderboard',icon:Trophy},{to:'/profile',label:'Profile',icon:User}];
+export default function Navbar(){ const { user, logout } = useAuth(); return <header className="sticky top-0 z-40 border-b border-white/10 bg-black/45 backdrop-blur-xl"><div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"><Link to="/" className="font-display text-2xl font-extrabold tracking-[.18em]">ANIFINE</Link><nav className="hidden gap-2 md:flex">{links.map(({to,label,icon:Icon})=><NavLink key={to} to={to} className={({isActive})=>`flex items-center gap-2 rounded-2xl px-4 py-2 text-sm font-bold transition ${isActive?'bg-anifine-primary text-white':'text-white/60 hover:bg-white/10 hover:text-white'}`}><Icon size={17}/>{label}</NavLink>)}</nav>{user ? <Button variant="ghost" onClick={logout}><LogOut size={17}/>Logout</Button> : <Link to="/login"><Button>Login</Button></Link>}</div></header>; }
